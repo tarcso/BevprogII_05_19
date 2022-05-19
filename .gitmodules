@@ -1,0 +1,3 @@
+[submodule "libtarcso"]
+	path = libtarcso
+	url = ssh://github.com/tarcso/libtarcso.git
