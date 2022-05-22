@@ -98,6 +98,21 @@ class Pelda: public Window
             {
                 s->update(sz1->allapot(), sz2->allapot(), sz3->allapot(), sz4->allapot());
                 t5->setText("Szabad skillpont: " + std::to_string(s->getmarad()));
+                if (s->getmarad() == 0)
+                {
+                    sz1->changeMax(sz1->allapot());
+                    sz2->changeMax(sz2->allapot());
+                    sz3->changeMax(sz3->allapot());
+                    sz4->changeMax(sz4->allapot());
+                }
+                else
+                {
+
+                    sz1->changeMax(10);
+                    sz2->changeMax(10);
+                    sz3->changeMax(10);
+                    sz4->changeMax(10);
+                }
             }
         }
 };
