@@ -79,17 +79,17 @@ class Pelda: public Window
             screenx = XX;
             screeny = YY;
             s = new Skillek(25);
-            t = new textBox(this, 30, 25, 100, 20, "Név");
+            t = new textBox(this, 30, 25, 100, 20, "Név", true);
             szov = new SzovegSzerk(this, 30, 50, 250, 40);
             sz1 = new Szambeall(this, 130, 100, 70, 30, 1, 10);
             sz2 = new Szambeall(this, 130, 150, 70, 30, 1, 10);
             sz3 = new Szambeall(this, 130, 200, 70, 30, 1, 10);
             sz4 = new Szambeall(this, 130, 250, 70, 30, 1, 10);
-            t1 = new textBox(this, 30, 100, 95, 30, "intelligencia");
-            t2 = new textBox(this, 30, 150, 95, 30, "kitartás");
-            t3 = new textBox(this, 30, 200, 95, 30, "memória");
-            t4 = new textBox(this, 30, 250, 95, 30, "érdeklődés");
-            t5 = new textBox(this, 300, 175, 190, 30, "Szabad skillpont: " + std::to_string(s->getmarad()));
+            t1 = new textBox(this, 30, 100, 95, 30, "intelligencia", false);
+            t2 = new textBox(this, 30, 150, 95, 30, "kitartás", false);
+            t3 = new textBox(this, 30, 200, 95, 30, "memória", false);
+            t4 = new textBox(this, 30, 250, 95, 30, "érdeklődés", false);
+            t5 = new textBox(this, 300, 175, 190, 30, "Szabad skillpont: " + std::to_string(s->getmarad()), false);
         }
 
         void esemeny(const std::string& ki_mondta)
